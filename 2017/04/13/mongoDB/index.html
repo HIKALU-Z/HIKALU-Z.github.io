@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="HIKALU">
-    <title>归档: 2016/11 - HIKALU</title>
+    <title>mongoDB错误代号100的解决方案 - HIKALU</title>
     <meta name="author" content="HIKALU">
     
         <meta name="keywords" content="hexo,javascript,">
@@ -15,15 +15,16 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="My Blog">
+    <meta name="description" content="今天在安装mongodb后一直报错，说是错误100，没有权限。">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="HIKALU">
-<meta property="og:url" content="https://hikalu-z.github.io/archives/2016/11/index.html">
+<meta property="og:title" content="mongoDB错误代号100的解决方案">
+<meta property="og:url" content="https://hikalu-z.github.io/2017/04/13/mongoDB/index.html">
 <meta property="og:site_name" content="HIKALU">
-<meta property="og:description" content="My Blog">
+<meta property="og:description" content="今天在安装mongodb后一直报错，说是错误100，没有权限。">
+<meta property="og:updated_time" content="2017-04-13T03:37:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HIKALU">
-<meta name="twitter:description" content="My Blog">
+<meta name="twitter:title" content="mongoDB错误代号100的解决方案">
+<meta name="twitter:description" content="今天在安装mongodb后一直报错，说是错误100，没有权限。">
     
         <link rel="publisher" href="https://plus.google.com/12345678"/>
     
@@ -33,6 +34,9 @@
     
         <meta property="og:image" content="https://avatars0.githubusercontent.com/u/14190574?v=3&amp;s=460"/>
     
+    
+        <meta property="og:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492064520226&amp;di=a660d856b271c0e81125bc6fefe5bb5e&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.codeceo.com%2Fimages%2F2015%2F08%2F142937age17oo7nmh8ja1a.png"/>
+        <meta class="swiftype" name="image" data-type="enum" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492064520226&amp;di=a660d856b271c0e81125bc6fefe5bb5e&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.codeceo.com%2Fimages%2F2015%2F08%2F142937age17oo7nmh8ja1a.png" />
     
     
     
@@ -48,7 +52,7 @@
             <!-- Define author's picture -->
 
 
-<header id="header" data-behavior="1">
+<header id="header" data-behavior="3">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <h1 class="header-title">
         <a class="header-title-link" href="/ ">HIKALU</a>
@@ -72,7 +76,7 @@
         
     
 
-<nav id="sidebar" data-behavior="1">
+<nav id="sidebar" data-behavior="3">
     <div class="sidebar-container">
         
             <div class="sidebar-profile">
@@ -214,73 +218,113 @@
 </nav>
 
             
-            <div id="main" data-behavior="1"
+            <div id="main" data-behavior="3"
                  class="
                         hasCoverMetaIn
                         ">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
     
     
-    <article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/11/27/hello-blog/">
-                            关于生活的问答
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-11-27T23:07:52+08:00">
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            mongoDB错误代号100的解决方案
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2017-04-13T11:14:39+08:00">
 	
-		    11月 27, 2016
+		    4月 13, 2017
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/categories/随笔/">随笔</a>
+    <a class="category-link" href="/categories/数据库/">数据库</a>
 
 
     
 </div>
 
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <blockquote>
-<p>语言是存在的家 –海德格尔<br>
-                    
-                        <a href="/2016/11/27/hello-blog/" class="postShorten-excerpt_link link">
-                            阅读全文
-                        </a>
-                        
-                    
-                </div>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <p>今天在安装mongodb后一直报错，说是错误100，没有权限。<br><a id="more"></a><br>错误信息如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">2016-02-06T18:10:44.893+0900 I CONTROL  [main] ***** SERVER RESTARTED *****</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] MongoDB starting : pid=46957 port=27017 dbpath=/usr/local/var/mongodb 64-bit host=P23722.local</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] db version v3.2.1</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] git version: a14d55980c2cdc565d4704a7e3ad37e4e535c1b2</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] allocator: system</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] modules: none</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] build environment:</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     distarch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     target_arch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] options: &#123; config: &quot;/usr/local/etc/mongod.conf&quot;, net: &#123; bindIp: &quot;127.0.0.1&quot; &#125;, storage: &#123; dbPath: &quot;/usr/local/var/mongodb&quot; &#125;, systemLog: &#123; destination: &quot;file&quot;, logAppend: true, path: &quot;/usr/local/var/log/mongodb/mongo.log&quot; &#125; &#125;</div><div class="line">2016-02-06T18:10:44.911+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),</div><div class="line">2016-02-06T18:10:44.913+0900 E STORAGE  [initandlisten] WiredTiger (2) [1454749844:913596][46957:0x7fff75fbc000], file:WiredTiger.wt, connection: /usr/local/var/mongodb/WiredTiger.wt: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I -        [initandlisten] Assertion: 28595:2: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I STORAGE  [initandlisten] exception in initAndListen: 28595 2: No such file or directory, terminating</div><div class="line">2016-02-06T18:10:44.923+0900 I CONTROL  [initandlisten] dbexit:  rc: 100</div></pre></td></tr></table></figure></p>
+<p>解决方案如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rm -rf /usr/local/var/mongodb</div><div class="line">brew uninstall --force mongodb</div><div class="line">brew install mongodb</div></pre></td></tr></table></figure>
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-            <a href="/2016/11/27/hello-blog/">
-                <div class="postShorten-thumbnailimg">
-                    <img alt="" itemprop="image" src="http://d1u9biwaxjngwg.cloudfront.net/elements-showcase/vintage-140.jpg"/>
-                </div>
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">标签</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/error/">error</a> <a class="tag tag--primary tag--small t-link" href="/tags/mongoDB/">mongoDB</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/27/hello-blog/" data-tooltip="关于生活的问答">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
             </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://hikalu-z.github.io/2017/04/13/mongoDB/">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
             
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">第 1 页 共 1 页</li>
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+            
+        
+    </div>
+</article>
 
 
 
@@ -291,6 +335,69 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/27/hello-blog/" data-tooltip="关于生活的问答">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://hikalu-z.github.io/2017/04/13/mongoDB/">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="3">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://hikalu-z.github.io/2017/04/13/mongoDB/">
+                <i class="fa fa-weibo"></i><span class="">分享到 微博</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
             
         </div>
         
@@ -422,6 +529,25 @@
         <!--SCRIPTS-->
 <script src="/assets/js/script-taaobz4ueybn54ikf9gtu3wlm8tpgzjkwfknygrtitquljbwokv26p56moto.min.js"></script>
 <!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://hikalu-z.github.io/2017/04/13/mongoDB/';
+                 
+                    this.page.identifier = '2017/04/13/mongoDB/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'HIKALU';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
 
 
 
