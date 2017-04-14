@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://hikalu-z.github.io/2017/04/13/mongoDB/index.html">
 <meta property="og:site_name" content="HIKALU">
 <meta property="og:description" content="今天在安装mongodb后一直报错，说是错误100，没有权限。">
-<meta property="og:updated_time" content="2017-04-13T08:35:26.000Z">
+<meta property="og:updated_time" content="2017-04-14T03:56:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mongoDB错误代号48、100的解决方案">
 <meta name="twitter:description" content="今天在安装mongodb后一直报错，说是错误100，没有权限。">
@@ -241,7 +241,7 @@
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/categories/数据库/">数据库</a>
+    <a class="category-link" href="/categories/数据库/">数据库</a>, <a class="category-link" href="/categories/数据库/学海泛舟/">学海泛舟</a>
 
 
     
@@ -251,7 +251,8 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>今天在安装mongodb后一直报错，说是错误100，没有权限。<br><a id="more"></a><br>错误信息如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">2016-02-06T18:10:44.893+0900 I CONTROL  [main] ***** SERVER RESTARTED *****</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] MongoDB starting : pid=46957 port=27017 dbpath=/usr/local/var/mongodb 64-bit host=P23722.local</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] db version v3.2.1</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] git version: a14d55980c2cdc565d4704a7e3ad37e4e535c1b2</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] allocator: system</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] modules: none</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] build environment:</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     distarch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     target_arch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] options: &#123; config: &quot;/usr/local/etc/mongod.conf&quot;, net: &#123; bindIp: &quot;127.0.0.1&quot; &#125;, storage: &#123; dbPath: &quot;/usr/local/var/mongodb&quot; &#125;, systemLog: &#123; destination: &quot;file&quot;, logAppend: true, path: &quot;/usr/local/var/log/mongodb/mongo.log&quot; &#125; &#125;</div><div class="line">2016-02-06T18:10:44.911+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),</div><div class="line">2016-02-06T18:10:44.913+0900 E STORAGE  [initandlisten] WiredTiger (2) [1454749844:913596][46957:0x7fff75fbc000], file:WiredTiger.wt, connection: /usr/local/var/mongodb/WiredTiger.wt: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I -        [initandlisten] Assertion: 28595:2: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I STORAGE  [initandlisten] exception in initAndListen: 28595 2: No such file or directory, terminating</div><div class="line">2016-02-06T18:10:44.923+0900 I CONTROL  [initandlisten] dbexit:  rc: 100</div></pre></td></tr></table></figure></p>
+            <p>今天在安装mongodb后一直报错，说是错误100，没有权限。<br><a id="more"></a></p>
+<p>错误信息如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">2016-02-06T18:10:44.893+0900 I CONTROL  [main] ***** SERVER RESTARTED *****</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] MongoDB starting : pid=46957 port=27017 dbpath=/usr/local/var/mongodb 64-bit host=P23722.local</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] db version v3.2.1</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] git version: a14d55980c2cdc565d4704a7e3ad37e4e535c1b2</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] allocator: system</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] modules: none</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] build environment:</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     distarch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     target_arch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] options: &#123; config: &quot;/usr/local/etc/mongod.conf&quot;, net: &#123; bindIp: &quot;127.0.0.1&quot; &#125;, storage: &#123; dbPath: &quot;/usr/local/var/mongodb&quot; &#125;, systemLog: &#123; destination: &quot;file&quot;, logAppend: true, path: &quot;/usr/local/var/log/mongodb/mongo.log&quot; &#125; &#125;</div><div class="line">2016-02-06T18:10:44.911+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),</div><div class="line">2016-02-06T18:10:44.913+0900 E STORAGE  [initandlisten] WiredTiger (2) [1454749844:913596][46957:0x7fff75fbc000], file:WiredTiger.wt, connection: /usr/local/var/mongodb/WiredTiger.wt: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I -        [initandlisten] Assertion: 28595:2: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I STORAGE  [initandlisten] exception in initAndListen: 28595 2: No such file or directory, terminating</div><div class="line">2016-02-06T18:10:44.923+0900 I CONTROL  [initandlisten] dbexit:  rc: 100</div></pre></td></tr></table></figure></p>
 <p>解决方案如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rm -rf /usr/local/var/mongodb</div><div class="line">brew uninstall --force mongodb</div><div class="line">brew install mongodb</div></pre></td></tr></table></figure>
 <p>解决后又有新的问题</p>
@@ -270,7 +271,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/error/">error</a> <a class="tag tag--primary tag--small t-link" href="/tags/mongoDB/">mongoDB</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/error/">error</a> <a class="tag tag--primary tag--small t-link" href="/tags/mongoDB/">mongoDB</a> <a class="tag tag--primary tag--small t-link" href="/tags/server/">server</a>
 
             </div>
         
@@ -498,6 +499,31 @@
                 <div class="media">
                     
                     <div class="media-left">
+                        <a class="link-unstyled" href="https://hikalu-z.github.io/2016/11/27/bindLocalhost/">
+                            <img class="media-image" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492152652181&amp;di=d00b0e3f6c344f858e3a8cd987f7dd20&amp;imgtype=0&amp;src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F12%2F06%2F80%2F39z58PICZsh.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://hikalu-z.github.io/2016/11/27/bindLocalhost/">
+                            <h3 class="media-heading">绑定localhost</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2016年11月27日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>今天在学习express的时候遇到了一个问题。<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
                         <a class="link-unstyled" href="https://hikalu-z.github.io/2017/04/13/mongoDB/">
                             <img class="media-image" src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1492064520226&amp;di=a660d856b271c0e81125bc6fefe5bb5e&amp;imgtype=0&amp;src=http%3A%2F%2Fstatic.codeceo.com%2Fimages%2F2015%2F08%2F142937age17oo7nmh8ja1a.png" width="90" height="90"/>
                         </a>
@@ -527,7 +553,7 @@
                 data-message-zero="没有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 2 篇文章
+                找到 3 篇文章
             </p>
         </div>
     </div>

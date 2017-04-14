@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hikalu-z.github.io/"/>
-  <updated>2017-04-13T08:35:26.000Z</updated>
+  <updated>2017-04-14T03:56:37.000Z</updated>
   <id>https://hikalu-z.github.io/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="https://hikalu-z.github.io/2017/04/13/mongoDB/"/>
     <id>https://hikalu-z.github.io/2017/04/13/mongoDB/</id>
     <published>2017-04-13T03:14:39.000Z</published>
-    <updated>2017-04-13T08:35:26.000Z</updated>
+    <updated>2017-04-14T03:56:37.000Z</updated>
     
-    <content type="html"><![CDATA[<p>今天在安装mongodb后一直报错，说是错误100，没有权限。<br><a id="more"></a><br>错误信息如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">2016-02-06T18:10:44.893+0900 I CONTROL  [main] ***** SERVER RESTARTED *****</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] MongoDB starting : pid=46957 port=27017 dbpath=/usr/local/var/mongodb 64-bit host=P23722.local</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] db version v3.2.1</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] git version: a14d55980c2cdc565d4704a7e3ad37e4e535c1b2</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] allocator: system</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] modules: none</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] build environment:</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     distarch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     target_arch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] options: &#123; config: &quot;/usr/local/etc/mongod.conf&quot;, net: &#123; bindIp: &quot;127.0.0.1&quot; &#125;, storage: &#123; dbPath: &quot;/usr/local/var/mongodb&quot; &#125;, systemLog: &#123; destination: &quot;file&quot;, logAppend: true, path: &quot;/usr/local/var/log/mongodb/mongo.log&quot; &#125; &#125;</div><div class="line">2016-02-06T18:10:44.911+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),</div><div class="line">2016-02-06T18:10:44.913+0900 E STORAGE  [initandlisten] WiredTiger (2) [1454749844:913596][46957:0x7fff75fbc000], file:WiredTiger.wt, connection: /usr/local/var/mongodb/WiredTiger.wt: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I -        [initandlisten] Assertion: 28595:2: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I STORAGE  [initandlisten] exception in initAndListen: 28595 2: No such file or directory, terminating</div><div class="line">2016-02-06T18:10:44.923+0900 I CONTROL  [initandlisten] dbexit:  rc: 100</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<p>今天在安装mongodb后一直报错，说是错误100，没有权限。<br><a id="more"></a></p>
+<p>错误信息如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">2016-02-06T18:10:44.893+0900 I CONTROL  [main] ***** SERVER RESTARTED *****</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] MongoDB starting : pid=46957 port=27017 dbpath=/usr/local/var/mongodb 64-bit host=P23722.local</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] db version v3.2.1</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] git version: a14d55980c2cdc565d4704a7e3ad37e4e535c1b2</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] allocator: system</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] modules: none</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] build environment:</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     distarch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten]     target_arch: x86_64</div><div class="line">2016-02-06T18:10:44.910+0900 I CONTROL  [initandlisten] options: &#123; config: &quot;/usr/local/etc/mongod.conf&quot;, net: &#123; bindIp: &quot;127.0.0.1&quot; &#125;, storage: &#123; dbPath: &quot;/usr/local/var/mongodb&quot; &#125;, systemLog: &#123; destination: &quot;file&quot;, logAppend: true, path: &quot;/usr/local/var/log/mongodb/mongo.log&quot; &#125; &#125;</div><div class="line">2016-02-06T18:10:44.911+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=4G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),</div><div class="line">2016-02-06T18:10:44.913+0900 E STORAGE  [initandlisten] WiredTiger (2) [1454749844:913596][46957:0x7fff75fbc000], file:WiredTiger.wt, connection: /usr/local/var/mongodb/WiredTiger.wt: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I -        [initandlisten] Assertion: 28595:2: No such file or directory</div><div class="line">2016-02-06T18:10:44.923+0900 I STORAGE  [initandlisten] exception in initAndListen: 28595 2: No such file or directory, terminating</div><div class="line">2016-02-06T18:10:44.923+0900 I CONTROL  [initandlisten] dbexit:  rc: 100</div></pre></td></tr></table></figure></p>
 <p>解决方案如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rm -rf /usr/local/var/mongodb</div><div class="line">brew uninstall --force mongodb</div><div class="line">brew install mongodb</div></pre></td></tr></table></figure>
 <p>解决后又有新的问题</p>
@@ -42,10 +43,14 @@
     
       <category term="数据库" scheme="https://hikalu-z.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
+      <category term="学海泛舟" scheme="https://hikalu-z.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AD%A6%E6%B5%B7%E6%B3%9B%E8%88%9F/"/>
+    
     
       <category term="mongoDB" scheme="https://hikalu-z.github.io/tags/mongoDB/"/>
     
       <category term="error" scheme="https://hikalu-z.github.io/tags/error/"/>
+    
+      <category term="server" scheme="https://hikalu-z.github.io/tags/server/"/>
     
   </entry>
   
@@ -74,6 +79,31 @@
       <category term="blog" scheme="https://hikalu-z.github.io/tags/blog/"/>
     
       <category term="markdown" scheme="https://hikalu-z.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>绑定localhost</title>
+    <link href="https://hikalu-z.github.io/2016/11/27/bindLocalhost/"/>
+    <id>https://hikalu-z.github.io/2016/11/27/bindLocalhost/</id>
+    <published>2016-11-27T15:07:52.000Z</published>
+    <updated>2017-04-14T04:03:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在学习express的时候遇到了一个问题。<br><a id="more"></a><br>使用mongoose的时候用到了如下的语句。<br><code>mongoose.connect(&#39;mongodb://localhost:27017/react-express-api&#39;);</code><br>结果在启动后台时报错<br><code>Error: getaddrinfo ENOTFOUND localhost localhost 27017</code><br>一开始以为是mongodb没有启动，后来发现可以用<em>mongo shell</em>,只能在网上搜查解决办法,发现将<em>localhost</em> 替换为<em>127.0.0.1</em>就可以了.<br>原来是在mac下我的localhost没有和本机的ip绑定,解决办法很简单,去修改本机的<code>hosts</code>文件即可.<br><code>sudo open -a TextEdit /etc/hosts</code><br><code>127.0.0.1  localhost</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在学习express的时候遇到了一个问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学海泛舟" scheme="https://hikalu-z.github.io/categories/%E5%AD%A6%E6%B5%B7%E6%B3%9B%E8%88%9F/"/>
+    
+    
+      <category term="server" scheme="https://hikalu-z.github.io/tags/server/"/>
+    
+      <category term="mongoose" scheme="https://hikalu-z.github.io/tags/mongoose/"/>
     
   </entry>
   
