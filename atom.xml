@@ -93,31 +93,6 @@
   </entry>
   
   <entry>
-    <title>绑定localhost</title>
-    <link href="https://hikalu-z.github.io/2016/11/27/bindLocalhost/"/>
-    <id>https://hikalu-z.github.io/2016/11/27/bindLocalhost/</id>
-    <published>2016-11-27T15:07:52.000Z</published>
-    <updated>2017-04-14T04:09:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天在学习express的时候遇到了一个问题。<br><a id="more"></a><br>使用mongoose的时候用到了如下的语句。<br><code>mongoose.connect(&#39;mongodb://localhost:27017/react-express-api&#39;);</code><br>结果在启动后台时报错<br><code>[MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: getaddrinfo ENOTFOUND localhost localhost:27017]</code><br>一开始以为是mongodb没有启动，后来发现可以用<em>mongo shell</em>,只能在网上搜查解决办法,发现将<em>localhost</em> 替换为<em>127.0.0.1</em>就可以了.<br>原来是在mac下我的localhost没有和本机的ip绑定,解决办法很简单,去修改本机的<code>hosts</code>文件即可.<br><code>sudo open -a TextEdit /etc/hosts</code><br><code>127.0.0.1  localhost</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天在学习express的时候遇到了一个问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="学海泛舟" scheme="https://hikalu-z.github.io/categories/%E5%AD%A6%E6%B5%B7%E6%B3%9B%E8%88%9F/"/>
-    
-    
-      <category term="server" scheme="https://hikalu-z.github.io/tags/server/"/>
-    
-      <category term="mongoose" scheme="https://hikalu-z.github.io/tags/mongoose/"/>
-    
-  </entry>
-  
-  <entry>
     <title>关于生活的问答</title>
     <link href="https://hikalu-z.github.io/2016/11/27/hello-blog/"/>
     <id>https://hikalu-z.github.io/2016/11/27/hello-blog/</id>
@@ -142,6 +117,31 @@
       <category term="blog" scheme="https://hikalu-z.github.io/tags/blog/"/>
     
       <category term="markdown" scheme="https://hikalu-z.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>绑定localhost</title>
+    <link href="https://hikalu-z.github.io/2016/11/27/bindLocalhost/"/>
+    <id>https://hikalu-z.github.io/2016/11/27/bindLocalhost/</id>
+    <published>2016-11-27T15:07:52.000Z</published>
+    <updated>2017-04-14T04:09:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在学习express的时候遇到了一个问题。<br><a id="more"></a><br>使用mongoose的时候用到了如下的语句。<br><code>mongoose.connect(&#39;mongodb://localhost:27017/react-express-api&#39;);</code><br>结果在启动后台时报错<br><code>[MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: getaddrinfo ENOTFOUND localhost localhost:27017]</code><br>一开始以为是mongodb没有启动，后来发现可以用<em>mongo shell</em>,只能在网上搜查解决办法,发现将<em>localhost</em> 替换为<em>127.0.0.1</em>就可以了.<br>原来是在mac下我的localhost没有和本机的ip绑定,解决办法很简单,去修改本机的<code>hosts</code>文件即可.<br><code>sudo open -a TextEdit /etc/hosts</code><br><code>127.0.0.1  localhost</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在学习express的时候遇到了一个问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学海泛舟" scheme="https://hikalu-z.github.io/categories/%E5%AD%A6%E6%B5%B7%E6%B3%9B%E8%88%9F/"/>
+    
+    
+      <category term="server" scheme="https://hikalu-z.github.io/tags/server/"/>
+    
+      <category term="mongoose" scheme="https://hikalu-z.github.io/tags/mongoose/"/>
     
   </entry>
   
